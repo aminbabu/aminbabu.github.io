@@ -208,7 +208,7 @@
 
 .underline {
 	margin: 2rem auto;
-	width: 50rem;
+	width: 70%;
 	height: 1px;
 	background: rgba(255, 255, 255, 0.3);
 }
@@ -586,10 +586,11 @@ footer .div {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 1rem;
+	justify-content: space-between;
 }
 
 .notified input {
-	width: 70%;
+	flex-basis: 65%;
 	padding: 0.5rem 0 .5rem 0.5rem;
 	font-size: 1rem;
 	font-family: "Josefin Sans", sans-serif;
@@ -599,11 +600,12 @@ footer .div {
 }
 
 .notified button {
-	width: 30%;
+	flex-basis: 35%;
 	font-family: "Josefin Sans", sans-serif;
-	padding: 0.5rem 0.3rem;
-	font-size: 0.9rem;
+	padding: 0.5rem 0;
+	font-size: 0.8rem;
 	color: #fff;
+	outline: none;
 	letter-spacing: 1px;
 	border: 2px solid #39B54A;
 	background-color: #39B54A;
@@ -616,12 +618,13 @@ footer .div {
 	color: #39B54A;
 }
 
+
 /*Copyright Text*/
 .copyright {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 50%;
+	width: 70%;
 	margin: 2rem auto;
 }
 
@@ -637,4 +640,174 @@ footer .div {
 
 .copyright a:hover {
 	color: #39B54A;
+}
+
+@media only screen and (max-width: 578px) {
+	
+	#header {
+		background-attachment: scroll;
+		height: 650px;
+	}
+
+	.header-text {
+		margin-top: 4rem;
+	}
+
+	.welcome {
+		font-size: .7rem;
+	}
+
+	.general-text {
+		font-size: 2.8rem;
+		margin-bottom: 5rem;
+	}
+
+	.btn {
+		width: 175px;
+		margin-bottom: 1rem;
+	}
+
+	.btn:focus {
+		color: #0B0B0B;
+		outline: none;
+	}
+
+	#menuBtn {
+		right: 2rem;
+	}
+
+	#about,
+	#services,
+	#works,
+	#clients,
+	#contact {
+		padding: 4rem 0;
+	}
+
+	#about h3,
+	#services h3,
+	#works h3,
+	#clients h3,
+	#contact h3 {
+		letter-spacing: .2rem;
+		font-size: 1.2rem;
+	}
+
+	#about h1 {
+		font-size: 3rem;
+		margin-top: 1rem;
+	}
+
+	#about p {
+		padding: 0;
+		text-align: left;
+	}
+
+	.underline {
+		width: 15rem;
+	}
+
+	.counter-1 {
+		flex-basis: 100%;
+		margin-bottom: 1.5rem;
+		border-right: none;
+	}
+
+	.counter-1 h2 {
+		font-size: 3.6rem;
+	}
+
+	.counter-1 span {
+		font-size: .9rem;
+	}
+
+	#services h1,
+	#works h1,
+	#clients h1,
+	#contact h1 {
+		padding: 0;
+		font-size: 2.5rem;
+	}
+
+	.service-1 {
+		flex-basis: 100%;
+		margin-bottom: 3rem;
+	}
+
+	.service-text .fa {
+		flex-basis: 10%;
+		font-size: 2rem;
+	}
+
+	.service-text .text {
+		flex-basis: 85%;
+		padding-right: 0;
+	}
+
+	.img-container {
+		margin-top: -6rem;
+		}
+
+	.img-container .img {
+		flex-basis: 100%;
+		height: auto;
+	}
+
+	.clients-icons {
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.clients-icons i {
+		flex-basis: 30%;
+		margin-bottom: 3rem;
+	}
+
+	.clients-text {
+		margin: 3rem 0; 
+	}
+
+	.clients-text i {
+		flex-basis: 3%;
+		font-size: 1rem;
+	}
+
+	.clients-text p {
+		flex-basis: 80%;
+		font-size: 1.2rem;
+	}
+
+	.form {
+		width: 100%;
+	}
+
+	.form-div-1,
+	.form-div-2 {	
+		flex-basis: 100%;	
+	}
+
+	footer .div {
+		flex-basis: 100%;
+	}
+
+	.copyright {
+		width: 90%;
+	}
+
+	.copyright p {
+		flex-basis: 100%;
+	}
+
+	.notified input,
+	.notified button {
+		flex-basis: 100%;
+	}
+
+	#navigation ul {
+		margin-top: 3rem;
+	}
+
+	#navigation ul li {
+		margin: 0.9rem 0;
+	}
 }
