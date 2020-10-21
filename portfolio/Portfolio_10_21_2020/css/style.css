@@ -580,6 +580,7 @@ footer p {
 
   #menuBtn {
     display: block;
+	z-index: 500;
   }
 
   header {
@@ -634,7 +635,7 @@ footer p {
 
   .hero {
     flex-direction: column;
-    padding: 4.5rem 0 7rem;
+    padding: 4.5rem 0 10rem;
   }
 
   .hero .right {
